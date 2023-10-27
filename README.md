@@ -1,2 +1,5 @@
-# web-programacion-III
-Repositorio de la página Web para la materia programacion III y laboratorio III
+Repositorio del Trabajo Práctico Obligatorio
+Comisión 23543
+Integrantes:
+    Adriana Brandan
+    Yamila Barbarino
