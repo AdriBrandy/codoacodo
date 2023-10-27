@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potter Store</title>
     <link rel="icon" href="hpicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +12,18 @@
 </head>
 <body>
     <header>
-        <div class="box">
-            <nav class="navegacion">
-                <div class="barra">
-                    <a class= "marca" href="index.html" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/harry-potter-logo-png-19.png" width="100" height="100" alt="Transparent Harry Potter Logo PNG" />PotterStore</a>
-                    <ul>
-                      <a href="productos.html">Productos</a>
-                      <a href="quienessomos.html">Quienes Somos</a>
-                      <a href="contacto.html">Contacto</a>
-                      <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                    </ul>
-                </div>
-            </nav>
+        <div class="contenedor contenido-header" id="box">
+            
+            <div class="barra" id = barra>
+                <a class= "marca" href="index.html" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/harry-potter-logo-png-19.png" width="100" height="100" alt="Transparent Harry Potter Logo PNG" />PotterStore</a>
+                </a>
+                <nav class="navegacion">
+                    <a id= "productos" href="productos.html">Productos</a>
+                    <a id= "nosotros"  href="quienessomos.html">Nosotros</a>
+                    <a id = "contactos" href="contacto.html">Contacto</a>
+                    <a id = "preguntas" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -33,7 +31,7 @@
         <div class="centro">
             <main>
                 <h2>Llena el formulario con tus datos</h2>
-                <form action="show_data.html" target="_blank" method="get">
+                <form action="" method="get" name="formulario">
                     <fieldset>
                         <legend>Motivo del contacto</legend>
         
@@ -49,13 +47,13 @@
                         <legend>Información Personal</legend>
         
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" >
         
                         <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" required>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" >
         
                         <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+                        <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" >
         
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
@@ -64,7 +62,7 @@
                     <fieldset>
                         <legend>Información del producto</legend>
                         <label for="nombre-producto">Nombre Del Producto:</label>
-                        <input type="text" id="nombre-producto" name="nombre-producto" placeholder="Nombre Del Producto" required>
+                        <input type="text" id="nombre-producto" name="nombre-producto" placeholder="Nombre Del Producto" >
         
                         <label for="opciones-reclamos"></label>
                         <select id="opciones-reclamos" name="reclamo">
@@ -79,14 +77,64 @@
                     </fieldset>
         
                     <label for="mayor">Tengo 18 años o más</label>
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="edad">
                     <input type="submit" value="Enviar">
                 </form>
+                <script>
+                (function(){
+                    
+                    var formulario = document.getElementsByName('formulario')[0]
+                    console.log (formulario)
+                    elementos = formulario.elements,
+                    boton = document.getElementById('btn');
+                    
+                    var validar_nombre = function(e) {
+                        if (formulario.nombre.value == 0){
+                            alert ("Ingresa tu nombre para continuar");
+                            e.preventDefault();
+                        } 
+                    }
+                    
+                    var validar_apellido = function(e) {
+                        if (formulario.apellido.value == 0){
+                            alert ("Ingresa tu apellido para continuar");
+                            e.preventDefault();
+                        } 
+                    }
+
+                    var validar_email = function(e) {
+                        if (formulario.email.value == 0){
+                            alert ("Ingresa tu email para continuar");
+                            e.preventDefault();
+                        } 
+                    }
+
+                    var validar_mensaje = function(e) {
+                        if (formulario.mensaje.value == 0){
+                            alert ("Por favor ingresa un mensaje para que podamos asistirte");
+                            e.preventDefault();
+                        } 
+                    }
+
+                    var validar_edad = function(e){
+                        if (formulario.edad.checked == false){
+                            alert ("Confirma que eres mayor de edad para continuar")
+                            e.preventDefault();
+                        } 
+                    }
+
+                    var validar = function (e){
+                        validar_nombre(e);
+                        validar_apellido(e);
+                        validar_email(e);
+                        validar_mensaje(e);
+                        validar_edad(e)
+                    }
+                    
+                    formulario.addEventListener("submit",validar)
+                    }())
+                </script>
             </main>
-            
-            <div>
-                <button><a href="./">Volver al Inicio</a></button>   
-            </div>
 
         </div>
     </div>
