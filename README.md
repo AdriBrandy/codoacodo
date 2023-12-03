@@ -1,2 +1,3 @@
-# web-programacion-III
-Repositorio de la página Web para la materia programacion III y laboratorio III
+# Full Stack Python comisión 23543
+Repositorio de la página Web para Codo a Codo Full Stack Python comisión 23543
+Integrantes Yamila Barbarino y Adriana Brandan
