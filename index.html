@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potter Store</title>
+    <link rel="icon" href="hpicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;900&family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="inicio">
+
+        <!-- Barra de Navegacion -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-0">
+            <div class="container py-3 px-0">
+                <a href="./" class="navbar-brand h1 mb-0 me-4 p-0">
+                    <img class="d-inline-block" src="img/harry-potter-seeklogo.svg" alt="Logo">
+                    PotterStore
+                </a>
+        
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a href="productos.html" class="nav-link dropdown-toggle p-0 me-4 active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="bufandas.html" class="dropdown-item">
+                                        Bufandas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="tazas.html" class="dropdown-item">
+                                        Tazas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="varitas.html" class="dropdown-item">
+                                        Varitas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="libros.html" class="dropdown-item">
+                                        Libros
+                                    </a>
+                                </li>
+
+                            </ul>
+                            
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="quienessomos.html" class="nav-link p-0 me-4">
+                                Nosotros
+                            </a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link p-0 me-4">
+                                Contacto
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="preguntas-frecuentes.html" class="nav-link p-0">
+                                Preguntas
+                            </a>
+                        </li>
+        
+                    </ul>
+
+                    <!-- Buscador -->
+                    <form class="form1 d-flex ms-auto mb-1 position-relative">
+                        <input type="text" class="form-control m-0" placeholder="Buscar">
+                        <div class="position-absolute icono-form">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+                </div>
+            </div> <!--.container-->
+        </nav>
+        
+
+        <!-- Carrusel -->
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            
+            <!-- Botones inferiores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="7500">
+                    <div class="overlay-image" style="background-image: url(./img/banner.webp);"></div>
+                    <div class="carousel-text">
+                        <h1>PotterStore Bienvenidos a la Magia de Harry Potter</h1>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="7500">
+                    <div class="overlay-image" style="background-image: url(./img/banner2.jpg);"></div>
+                    <div class="carousel-text">
+                        <h2>Novedades</h2>
+                        <p>Nuevos libros disponibles</p>
+                        <a href="libros.html" class="boton">Ver ofertas</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="7500">
+                    <div class="overlay-image" style="background-image: url(./img/banner3.jpg);"></div>
+                    <div class="carousel-text">
+                        <h2>¿A qué casa perteneces?</h2>
+                        <p>Disponible el test</p>
+                        <a href="https://www.idrlabs.com/es/casa-de-hogwarts/prueba.php" class="boton" target="_blank">Hacer Test</a>
+                    </div>
+                </div>
+            
+            </div>
+
+            <!-- Botones laterales -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="contenedor-grid contenedor">
+        <div class="contenedor centro">
+            <section class="bienvenida seccion">
+                <div>
+                    <h2 class="separator">Bienvenidos a la Magia de Harry Potter</h2>
+                    <p>¡Bienvenidos a la tienda en línea que hará realidad tus sueños mágicos!
+                    En <span>PotterSore</span>, te invitamos a explorar un mundo encantado lleno de
+                    productos inspirados en el universo de Harry Potter.</p>
+                </div>
+            </section>
+            
+            <section class="seccion">
+                <h2 class="separator">Descubre la Magia</h2>
+                <p>Sumérgete en el mundo de Hogwarts y descubre una amplia gama 
+                de <a href="productos.html">productos</a> cuidadosamente seleccionados. 
+                Desde varitas mágicas auténticas hasta ropa y accesorios de tus casas favoritas,
+                libros, y objetos de colección, aquí encontrarás todo lo que necesitas para
+                abrazar tu amor por Harry Potter. En <span>PotterStore</span>, nos enorgullece
+                ofrecer productos con licencia oficial de Harry Potter. Cada artículo que
+                encuentres en nuestra tienda es auténtico y de la más alta calidad, para garantizarte
+                la mejor experiencia mágica</p>
+            </section>
+        </div>
+
+        <div class="contenedor centro-inferior">
+            <section class="despedida seccion">
+                <h2 class="separator">Haz Realidad Tus Sueños Mágicos</h2>
+                <p>Desde las páginas de los libros hasta las pantallas de cine, Harry Potter ha tocado el corazón
+                de millones de personas en todo el mundo. En <span>PotterStore</span>, te ayudaremos a hacer realidad
+                tus sueños mágicos con productos que te transportarán al mundo de la magia y la aventura.</p>
+                <p>¡Gracias por visitar nuestra tienda en línea! Estamos emocionados de compartir esta
+                experiencia mágica contigo. Explora, disfruta y déjate llevar por la magia de Harry Potter.</p>
+            </section>
+        </div>
+        
+        <section class="izquierda">
+            <h3>Conoce mas de</h3>
+            <div class="contenedor-escudo contenedor"> 
+                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Gryffindor" target="_blank">
+                    <h4>Gryffindor</h4>
+                    <img src="img/escudos/escudo-griffyndor.png" alt="Gryffindor">
+                </a>
+            </div>
+        </section>
+
+        <section class="izquierda-inferior">
+            <h3>Conoce mas de</h3>
+            <div class="contenedor-escudo contenedor">
+                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Hufflepuff" target="_blank">
+                    <h4>Hufflepuff</h4>
+                    <img src="img/escudos/escudo-hufflepuff.png" alt="Hufflepuff">
+                </a>
+            </div>
+        </section>
+
+        <section class="derecha">
+            <h3>Conoce mas de</h3>
+            <div class="contenedor-escudo contenedor">
+                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Ravenclaw" target="_blank">
+                    <h4>Ravenclaw</h4>
+                    <img src="img/escudos/escudo-ravenclaw.png" alt="Ravenclaw">
+                </a>
+            </div>
+        </section>
+
+        <section class="derecha-inferior">
+            <h3>Conoce mas de</h3>
+            <div class="contenedor-escudo contenedor">
+                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Slytherin" target="_blank">
+                    <h4>Slytherin</h4>
+                    <img src="img/escudos/escudo-slytherin.png" alt="Slytherin">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="test parallax">
+        <div class="contenedor contenido-centrado">
+            <h2>Explora Tu Casa</h2>
+            <p>¿Eres un valiente Gryffindor, un astuto Slytherin, un leal Hufflepuff o un intelectual
+            Ravenclaw? Encuentra productos que representen tu casa y demuestra tu lealtad a Hogwarts.</p>
+            <a href="https://www.idrlabs.com/es/casa-de-hogwarts/prueba.php" class="boton transparente" target="_blank">Hacer Test</a>
+        </div>
+    </section>
+
+    <main class="main-index contenedor centrar-texto">
+        <h2>Nuestros productos</h2>
+        <div class="contenedor-productos">
+            
+            <div class="producto">
+                <a class="card-producto" href="bufandas.html">
+                    <img src="img/bufandas-index.png" alt="portada bufandas">
+                    <h3>Bufandas</h3>
+                </a>
+            </div>
+        
+            <div class="producto">
+                <a class="card-producto" href="tazas.html">
+                    <img src="img/tazas-index.png" alt="portada tazas">
+                    <h3>Tazas</h3>                
+                </a>
+            </div>
+        
+            <div class="producto">
+                <a class="card-producto" href="varitas.html">
+                    <img src="img/varitas-index.png" alt="portada varitas">
+                    <h3>Varitas</h3>
+                </a>
+            </div>
+
+            <div class="producto">
+                <a class="card-producto" href="libros.html">
+                    <img src="img/libros-index.png" alt="portada libros">
+                    <h3>Libros</h3>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="seccion-novedades">
+        <h2 class="centrar-texto">Novedades</h2>
+
+        <div class="contenedor-novedades contenedor">
+
+            <div class="producto">
+                <a class="card-producto" href="bufandas.html">
+                    <img src="img/novedad-varita-harry.png" alt="novedad varita harry potter">
+                    <h3>Varita de Harry Potter</h3>
+                </a>
+            </div>
+        
+            <div class="producto">
+                <a class="card-producto" href="tazas.html">
+                    <img src="img/novedad-taza-dumbledore.png" alt="novedad taza dumbledore">
+                    <h3>Taza de Dumbledore</h3>                
+                </a>
+            </div>
+        
+            <div class="producto">
+                <a class="card-producto" href="varitas.html">
+                    <img src="img/novedad-varita-voldemort.png" alt="novedad varita voldemort">
+                    <h3>Varita de Voldemort</h3>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>¿Necesitas ayuda, tienes alguna pregunta?</h2>
+            <p> No dudes en contactarnos para cualquier consulta o asistencia. Completa el
+            formulario de contacto</p>
+            <a href="contacto.html" class="boton">Contáctanos</a>
+        </div>
+    </section>
+      
+    <footer>
+        <div class="experiencia">
+            <div>
+                <h3>Legal</h3>
+                <nav class="navegacion-legal">
+                    <ul>
+                        <li><a href="https://www.wizardingworld.com/childrens-privacy-policy" target="_blank">Aviso de Privacidad</a></li>
+                        <li><a href="https://www.wizardingworld.com/privacy" target="_blank">Aviso de cookies</a></li>
+                        <li><a href="https://www.wizardingworld.com/legals" target="_blank">Aviso Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div>
+                <h3>Ayuda</h3>
+                <nav class="navegacion-ayuda">
+                    <ul>
+                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>
+                        <li><a href="https://www.wizardingworld.com/terms" target="_blank">Bases y Condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contenedor-redes">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales centrar-texto">                    
+                    <a href="#"><i class="fa-brands fa-facebook-f icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">
+            Todos los derechos Reservados PotterStore 2023.
+        </p>
+    </footer>
+    <!-- Script de js productos-->
+    <script src="index.js">
+    </script>
+    
+    <!-- Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

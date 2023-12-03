@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazas</title>
+    <link rel="icon" href="hpicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;900&family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="others">
+            <div class="box">
+                <nav class="navegacion">
+                    <div class="barra">
+                        <a class="marca" href="index.html">
+                          <img src="img\harry-potter-seeklogo.svg" alt="Logo" width="50" height="50" >
+                          PotterStore
+                        </a>
+                        <ul>
+                          <a href="productos.html">Productos</a>
+                          <a href="quienessomos.html">Quienes Somos</a>
+                          <a href="contacto.html">Contacto</a>
+                          <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="versionmovil">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-0">
+                <div class="container py-3 px-0">
+                    <a href="./" class="navbar-brand h1 mb-0 me-4 p-0">
+                        <img class="d-inline-block" src="img/harry-potter-seeklogo.svg" alt="Logo">
+                        PotterStore
+                    </a>
+            
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+    
+                            <li class="nav-item dropdown">
+                                <a href="productos.html" class="nav-link dropdown-toggle p-0 me-4 active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+    
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a href="bufandas.html" class="dropdown-item">Bufandas</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="tazas.html" class="dropdown-item">Tazas</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="varitas.html" class="dropdown-item">Varitas</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="libros.html" class="dropdown-item">Libros</a>
+                                    </li>
+    
+                                </ul>
+                                
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="quienessomos.html" class="nav-link p-0 me-4">Nosotros</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link p-0 me-4">Contacto</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="preguntas-frecuentes.html" class="nav-link p-0">Preguntas</a>
+                            </li>
+            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor centro">
+        <div class="container-title"><h3>Tazas</h3></div>    
+        <main class="mainproductos">
+                <div class="carouselinner">
+                    <img src="img/tazas/taza1.jpg" alt="taza1">                   
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$3500</span>
+                        <h3>Plataforma 9 3/4</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Material</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Plástico</option>
+                                <option value="adults">Cerámica</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1" 
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Descubre la magia en cada sorbo con nuestra versátil Taza de Harry Potter. Diseñada con detalle, incorpora elementos icónicos de la saga, desde emblemas de casas hasta hechizos. Su resistencia y durabilidad la hacen perfecta para el uso diario. Elige entre las opciones de cerámica o plástico y añade un toque mágico a tu experiencia.</p>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        </main>
+        <main class="mainproductos">
+                <div class="carouselinner">
+                    <img src="img/tazas/taza2.jpg" alt="taza2">                 
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$3500</span>
+                        <h3>Hedwig</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Material</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Plástico</option>
+                                <option value="adults">Cerámica</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1" 
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Descubre la magia en cada sorbo con nuestra versátil Taza de Harry Potter. Diseñada con detalle, incorpora elementos icónicos de la saga, desde emblemas de casas hasta hechizos. Su resistencia y durabilidad la hacen perfecta para el uso diario. Elige entre las opciones de cerámica o plástico y añade un toque mágico a tu experiencia.</p>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        </main>
+        <main class="mainproductos">
+                <div class="carouselinner">
+                    <img src="img/tazas/taza3.jpg" alt="taza3">                  
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$3500</span>
+                        <h3>Escudo de Hogwarts</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Material</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Plástico</option>
+                                <option value="adults">Cerámica</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1" 
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Descubre la magia en cada sorbo con nuestra versátil Taza de Harry Potter. Diseñada con detalle, incorpora elementos icónicos de la saga, desde emblemas de casas hasta hechizos. Su resistencia y durabilidad la hacen perfecta para el uso diario. Elige entre las opciones de cerámica o plástico y añade un toque mágico a tu experiencia.</p>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        </main>
+        <main class="mainproductos">
+                <div class="carouselinner">
+                    <img src="img/tazas/taza4.png" alt="taza4">                   
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$3500</span>
+                        <h3>Harry, Ron y Hermione</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Material</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Plástico</option>
+                                <option value="adults">Cerámica</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1" 
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                              
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Descubre la magia en cada sorbo con nuestra versátil Taza de Harry Potter. Diseñada con detalle, incorpora elementos icónicos de la saga, desde emblemas de casas hasta hechizos. Su resistencia y durabilidad la hacen perfecta para el uso diario. Elige entre las opciones de cerámica o plástico y añade un toque mágico a tu experiencia.</p>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        </main>
+        <div class="contenedor-grid">
+            <div class="centro">
+                <button type="button"><a href="productos.html" >Volver atrás</a></button>
+                <button type="button"><a href="./">Volver al Inicio </a></button>
+            </div> 
+        </div>
+            
+    </div>
+    
+
+    <footer>
+        <div class="experiencia">
+            <div>
+                <h3>Legal</h3>
+                <nav class="navegacion-legal">
+                    <ul>
+                        <li><a href="https://www.wizardingworld.com/childrens-privacy-policy" target="_blank">Aviso de Privacidad</a></li>
+                        <li><a href="https://www.wizardingworld.com/privacy"target="_blank">Aviso de cookies</a></li>
+                        <li><a href="https://www.wizardingworld.com/legals" target="_blank">Aviso Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div>
+                <h3>Ayuda</h3>
+                <nav class="navegacion-ayuda">
+                    <ul>
+                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>
+                        <li><a href="https://www.wizardingworld.com/terms" target="_blank">Bases y Condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contenedor-redes">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales centrar-texto">                    
+                    <a href="#"><i class="fa-brands fa-facebook-f icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">
+            Todos los derechos Reservados PotterStore 2023.
+        </p>
+    </footer>
+    <!-- script para contador de productos -->
+    <script src="index.js"></script>
+    <!-- Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
